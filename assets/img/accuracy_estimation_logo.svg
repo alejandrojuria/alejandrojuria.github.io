@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 750 523" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-137,-122.636)">
+        <rect x="0" y="0" width="1024" height="768" style="fill:none;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-304.56,-192.352)">
+        <text x="382px" y="270px" style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:45px;fill:rgb(207,35,43);">consistency</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-304.56,-192.352)">
+        <text x="384px" y="532px" style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:45px;fill:rgb(207,35,43);">correctness</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-304.56,-192.352)">
+        <text x="554px" y="375px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:40px;">Does this</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-304.56,-192.352)">
+        <text x="554px" y="423px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:40px;">implication hold?</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-304.56,-192.352)">
+        <text x="641px" y="648px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:40px;fill:rgb(207,35,43);">If yes, under what</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-304.56,-192.352)">
+        <text x="697px" y="696px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:40px;fill:rgb(207,35,43);">conditions?</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-304.56,-192.352)">
+        <rect x="516.159" y="291.534" width="4" height="183.826"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-304.56,-192.352)">
+        <path d="M509.759,473.359L518.159,490.159L526.559,473.359L509.759,473.359Z" style="fill-rule:nonzero;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-304.56,-192.352)">
+        <clipPath id="_clip1">
+            <path d="M709.713,433.396L802.821,605.936L786.276,614.864L693.168,442.324L709.713,433.396Z"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <path d="M787.855,593.786L788.805,595.546L785.285,597.445L784.335,595.685L700.156,439.69L703.676,437.79L787.855,593.786Z" style="fill:rgb(207,35,43);"/>
+            <path d="M778.703,598.725L794.074,609.52L793.488,590.746L778.703,598.725Z" style="fill:rgb(207,35,43);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>
