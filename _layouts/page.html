@@ -1,16 +1,10 @@
 ---
 layout: default
 ---
-<!-- page.html -->
-        <div class="post">
 
-          <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <p class="post-description">{{ page.description }}</p>
-          </header>
+{% if page.title != "about" %}
+  <h1>{{ page.title }}</h1>
+  <h6>{{ page.description }}</h6>
+{% endif %}
 
-          <article>
-            {{ content }}
-          </article>
-
-        </div>
+{{ content }}

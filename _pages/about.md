@@ -1,25 +1,60 @@
 ---
-layout: about
-title: about
+layout: page
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+title: about
+nav: about
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<div class="text-center mt-5">
+  <img class="profile-img" src="{{ 'prof_pic.jpg' | prepend: '/assets/img/' | prepend: site.baseurl }}">
+</div>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<div class="col mt-4">
+  <h1 class="title text-center font-weight-bold">Alejandro José Uría</h1>
+  <div class="row mt-3 mb-3">
+    <div class="col-sm-6">
+      <h6 class="mt-1 text-left text-sm-right" style="font-stretch: ultra-condensed;">
+        <a style="color: rgb(60, 72, 88);" target="_blank">PhD Student</a><br/>
+        <a style="color: rgb(60, 72, 88);" href="http://www.fmc.uam.es/" target="_blank">Condensed Matter Physics</a><br/>
+        <a style="color: rgb(60, 72, 88);" href="http://www.uam.es/" target="_blank">UAM</a>
+      </h6>
+    </div>
+    <div class="col-sm-6">
+      <h6 class="mt-1 text-left text-sm-left" style="font-stretch: ultra-condensed;">
+        Module 3, office 516<br/>
+        C/ Francisco Tomás y Valiente, 7<br/>
+        28049, Madrid, Spain
+      </h6>
+    </div>
+  </div>
+</div>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<!-- Introduction -->
+
+<div class="col text-justify p-0">
+  I am a Ph.D. student in condensed matter theory at <a href="https://www.uam.es/" target="_blank">Universidad Autónoma de Madrid</a>, advised by <a href="https://sites.google.com/site/palaciosjuanjose/" target="_blank">Juan José Palacios</a>. Currently, one of my research interests is the topological characterization of disordered materials via analytical techniques and machine learning. The other one is quantum few-body physics and its relation with the optical absorption spectrum of solids.
+  More generally, I am interested in scientific computation, software development and the application of artificial intelligence to physics. In this regard, I have developed software packages and libraries for my research topics, which are freely available. 
+  <br/><br/>
+  Before I started my Ph.D., I worked as a R&D engineer for <a href="https://corporate.arcelormittal.com/about/research-and-development" target="_blank">ArcelorMittal</a>, where I focused on 3d printing process automatization and physical simulations of alloys. My background is that of Physics and Mathematics, although I have been doing some tinkering with computers from a young age. My undergrad thesis was also about topological insulators, under the supervision of <a href="https://scholar.google.com/citations?user=0Iqb9h8AAAAJ&hl=en" target="_blank">Jaime Ferrer</a>.
+
+  <br/><br/>
+  As a hobbyist, unexpectedly I am into any technological-looking topic. I used to fly racing drones, and was looking to get into aeromodelling. This also spreads to my readings, since I particularly enjoy sci-fi, together with fantasy books. As for more outdoor activities, I dig freediving and hiking, or drinking some cider.
+</div>
+
+<!-- News -->
+<div class="news mt-3 p-0">
+  <h1 class="title mb-4 p-0">news</h1>
+  {% assign news = site.news | reverse %}
+  {% for item in news limit: site.news_limit %}
+    <div class="row p-0">
+      <div class="col-sm-2 p-0">
+        <span class="badge danger-color-dark font-weight-bold text-uppercase align-middle date ml-3">
+          {{ item.date | date: "%b %-d, %Y" }}
+        </span>
+      </div>
+      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
+        <p>{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
